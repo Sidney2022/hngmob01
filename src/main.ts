@@ -1,3 +1,7 @@
+
+// Above the createApp() line
+import { defineCustomElements } from '@ionic/pwa-elements/loader';
+defineCustomElements(window);
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router';
@@ -34,6 +38,10 @@ import '@ionic/vue/css/palettes/dark.system.css';
 /* Theme variables */
 import './theme/variables.css';
 
+// Above the createApp() line
+// import { defineCustomElements } from '@ionic/pwa-elements/loader';
+// defineCustomElements(window);
+
 const app = createApp(App)
   .use(IonicVue)
   .use(router);
@@ -41,3 +49,4 @@ const app = createApp(App)
 router.isReady().then(() => {
   app.mount('#app');
 });
+
