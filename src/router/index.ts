@@ -17,15 +17,15 @@ const routes: Array<RouteRecordRaw> = [
       },
       {
         path: 'products',
-        component: () => import('@/views/ProductsPage.vue')
+        component: () => import('../views/ProductsPage.vue')
       },
       {
         path: 'checkout',
-        component: () => import('@/views/CheckOutPage.vue')
+        component: () => import('../views/CheckOutPage.vue')
       },
       {
         path: 'order-success',
-        component: () => import('@/views/OrderSuccess.vue')
+        component: () => import('../views/OrderSuccess.vue')
       }
     ]
   }

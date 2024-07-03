@@ -1,5 +1,6 @@
 {
   "appId": "com.example.hngmob01",
   "appName": "hngmob01",
-  "webDir": "public"
+  "webDir": "public",
+  "bundledWebRuntime": false
 }
